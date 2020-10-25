@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-size: 16px;
+}
+
+footer {
+	padding: 2.5em;
+	background-color: black;
+	color: white;
+	margin-top: .625em;
+	border-bottom: 7px solid black;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	z-index: 2;
+	float: left;
+	margin-left: 1.875em;
+	margin-top: 1.18em;
+	width: 2.625em;
+	padding: 0;
+	z-index: 1;
+	display: none;
+}
+
+#top {
+	background-image: url('../images/heroimage3.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 100vh;
+	border: .125em rgba(0,0,0,0);
+}
+
+#enterArrow {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#enter {
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0);
+	transition: color 0.5s ease;
+	font-family: 'Roboto Condensed', sans-serif;
+	z-index: 0;
+	text-decoration: none;
+	position: absolute;
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	bottom: .4em;
+	width: 7%;
+	padding-bottom: 2.5%;
+}
+
+#enter:hover {
+	color: white;
+}
+
+#arrow {
+	padding-bottom: .2em;
+	width: 7%;
+	display: table;
+	margin: auto;
+	margin-top: -1em;
+	z-index: 1;
+}
+
+.navSelect {
+	color: #595958;
+	text-decoration: none;
+	font-size: 1.75em;
+	padding: .5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	border: 2px solid rgba(0,0,0,0);
+	padding: .125em;
+}
+
+.navSelect:hover {
+	border: 2px solid #595958;
+	border-radius: 5%;
+}
+
+.navSelect:active {
+	background-color: #595958;
+	color: white;
+}
+
+#topNav {
+	float: right;
+	margin: 1.25em 1.875em 0 0;
+}
+
+#topHeader {
+	font-family: 'Cinzel Decorative', cursive; 
+	font-size: 1.75em;
+	color: black;
+	margin-top: 4.375em;
+	text-align: center;
+	position: absolute;
+	margin-left: .85em;
+	margin-top: .78em;
+	padding-left: 0;
+	z-index: 0;
+}
+
+.line {
+	border-left: .125em solid white;
+	height: 7.3em;
+	margin-left: 83%;
+	position: absolute;
+}
+
+#lowerNav {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	margin-left: 84%;
+}
+
+#lowerHeader {
+	float:left;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.lowerNavSelect {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin-right: 1.5em;
+}
+
+.lowerNavSelect:hover {
+	text-decoration: underline;
+}
+
+.lowerNavSelect:active {
+	color: #595958;
+}
+
+.temp {
+	padding: .75em;
+	float: left;
+	width: 25%;
+}
+
+section::after, footer::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#topSpan {
+	background-color: white;
+	border: 2px solid black;
+	padding: 0.2em;
+	z-index: -1;
+}
+
+@media screen and (max-width: 1045px) {
+  body {
+  	font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 914px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 866px) {
+	#lowerNav {
+		margin-left: 81%;
+	}
+	.line {
+		margin-left: 80%;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.temp {
+		width: 50%;
+	}
+	#lowerNav {
+		margin-left: 81%;
+	}
+	.line {
+		margin-left: 80%;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	#lowerNav {
+		position: relative;
+		display: inline;
+		font-size: 1.2em;
+	}	
+	#lowerNavSelect {
+		text-decoration:
+	}
+	.line {
+		border: 2px solid black;
+	}
+	ul {
+		list-style-type: square;
+		list-style-position: inside;
+	}
+}
+
+@media screen and (max-width: 696px) {
+	.temp {
+		width: 100%;
+	}
+	.logo {
+		display: none;
+	}
+	#top {
+		background-image: url('../images/heroimage2.jpg');
+		background-position: right;
+		width: 100vw;
+	}
+	#topNav {
+		position: relative;
+		margin: 0;
+	}
+	#lowerHeader {
+		font-size: 1.47em;
+	}
+	.navSelect {
+		color: black;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 5%;
+		display: none;
+	}
+	.navSelect:hover {
+		border: 2px solid black;
+	}
+	.navSelect:active {
+		color: white;
+		background-color: black;
+	}
+	#topHeader {
+		float: none;
+		font-size: 2em;
+		position: relative;
+		margin: auto;
+		width: 46%;
+		padding-top: .2em;
+	}
+	#topSpan {
+		display: inline-block;
+		margin: 0;
+		padding: .2em;
+	}
+	#arrow {
+		width: 12%;
+	}
+}
