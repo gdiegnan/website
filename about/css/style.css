@@ -30,54 +30,8 @@ ul {
 	padding: 0;
 }
 
-#top {
-	background-image: url('../images/heroimage3.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	height: 100vh;
-	border: .125em rgba(0,0,0,0);
-}
-
-#enterArrow {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-#enter {
-	text-align: center;
-	text-transform: uppercase;
-	color: rgba(0,0,0,0);
-	transition: color 0.5s ease;
-	font-family: 'Roboto Condensed', sans-serif;
-	z-index: 0;
-	text-decoration: none;
-	position: absolute;
-	display: inline-block;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-	bottom: .4em;
-	width: 7%;
-	padding-bottom: 2.5%;
-}
-
-#enter:hover {
-	color: white;
-}
-
-#arrow {
-	padding-bottom: .2em;
-	width: 7%;
-	display: table;
-	margin: auto;
-	margin-top: -1em;
-	z-index: 1;
-}
-
 .navSelect {
-	color: #595958;
+	color: white;
 	text-decoration: none;
 	font-size: 1.75em;
 	padding: .5em;
@@ -87,13 +41,13 @@ ul {
 }
 
 .navSelect:hover {
-	border: 2px solid #595958;
+	border: 2px solid white;
 	border-radius: 5%;
 }
 
 .navSelect:active {
-	background-color: #595958;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 #topNav {
@@ -104,14 +58,14 @@ ul {
 #topHeader {
 	font-family: 'Cinzel Decorative', cursive; 
 	font-size: 1.75em;
-	color: black;
-	margin-top: 4.375em;
+	color: white;
 	text-align: center;
 	position: absolute;
 	margin-left: .85em;
-	margin-top: .78em;
+	margin-top: -2.12em;
 	padding-left: 0;
 	z-index: 0;
+	text-decoration: underline;
 }
 
 .line {
@@ -147,25 +101,44 @@ ul {
 	color: #595958;
 }
 
-.temp {
-	padding: .75em;
-	float: left;
-	width: 25%;
-}
-
 section::after, footer::after {
 	content: "";
 	clear: both;
 	display: table;
 }
 
-#topSpan {
-	background-color: white;
-	border: 2px solid black;
-	padding: 0.2em;
-	z-index: -1;
+#repair {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 2em;
+	margin-top: 12em;
+	z-index: 1;
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
+#main {
+	height: 100vh;
+}
+
+#repairPhoto {
+	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-45%);
+	z-index: -1;
+	position: absolute;
+	margin-top: 7em;
+}
+
+
+header {
+	padding-bottom: 5em;
+	background-color: black;
+	z-index: -1;
+}
+/*
 @media screen and (max-width: 1045px) {
   body {
   	font-size: 14px;
@@ -266,4 +239,5 @@ section::after, footer::after {
 	#arrow {
 		width: 12%;
 	}
-}
+} 
+*/
